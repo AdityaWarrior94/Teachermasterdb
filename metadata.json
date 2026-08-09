@@ -1,0 +1,6 @@
+{
+  "name": "PWGulf Teacher Dashboard",
+  "description": "PWGulf Teacher Dashboard for mentors to track student attendance, objective & subjective performance, zero attendance logs, flagged students, review logs, analytics, leaderboard, and discontinuation sheets with live Google Sheets sync.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

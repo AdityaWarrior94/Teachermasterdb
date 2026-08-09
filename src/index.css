@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@layer utilities {
+  /* Hide scrollbar for clean tab navigation */
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+  .no-scrollbar {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  /* Bento Grid subtle dot matrix background texture */
+  .bg-bento-pattern {
+    background-color: #f8fafc;
+    background-image: radial-gradient(#cbd5e1 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  /* Dark Mode bento grid texture */
+  .bg-bento-pattern-dark {
+    background-color: #0f172a;
+    background-image: radial-gradient(#334155 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+
+  /* High Contrast bento grid texture */
+  .bg-bento-pattern-contrast {
+    background-color: #000000;
+    background-image: radial-gradient(#525252 1px, transparent 1px);
+    background-size: 20px 20px;
+  }
+}
+
+@media print {
+  body {
+    -webkit-print-color-adjust: exact !important;
+    print-color-adjust: exact !important;
+    color-adjust: exact !important;
+    background-color: #ffffff !important;
+  }
+
+  .no-print,
+  button,
+  .backdrop-blur-xs {
+    backdrop-filter: none !important;
+  }
+
+  #student-report-printable-card {
+    box-shadow: none !important;
+    border: none !important;
+    max-height: none !important;
+    overflow: visible !important;
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 12px !important;
+  }
+}
